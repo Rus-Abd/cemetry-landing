@@ -243,3 +243,49 @@ nav {
 .about-img {
   margin-left: 55px;
 }
+.about-text{
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonts-eb);
+}
+.about-text h3{
+  color: var(--orange-main);
+  
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 43px;
+  margin-bottom: 19px;
+}
+.about-text p{
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #000000;
+  margin-bottom: 16px;
+}
+/* 
+
+
+
+
+*/
+.services{
+  height: 480px;
+  margin-top: 77px;
+  background-color: var(--orange-main);
+  font-family: var(--fonts-eb);
+  display: flex;
+  flex-direction: column;
+}
+.services h2{
+  margin-top: 74px;
+  margin-left: 493px;
+  font-weight: 600;
+font-size: 33px;
+line-height: 43px;
+/* identical to box height */
+
+
+color: #FFF9F7
+}
