@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>ARGER</title>
   </head>
   <body>
     <header>
@@ -40,19 +45,109 @@
           </p>
           <div class="intro-form"></div>
         </section>
-        <section class="about"></section>
+        <section class="about">
+          <img
+            src="./assets/img/about-img.png"
+            alt="angel-img"
+            class="about-img"
+          />
+          <div class="about-text">
+            <h3>Мы создаем памятники, которые передают ваши чувства</h3>
+            <p>
+              Мы делаем памятники которые помогут вам выразить все любовь, тепло
+              и уважение к усопшему. Каждый достоин того чтобы о нем помнили и
+              чтобы эту память сохранили не только в сердцах, но и в
+              материальном мире.
+            </p>
+            <p>
+              Памятники это особые сооружения, в которые вы вкладывает всю вашу
+              любовь и скорбь, а мы - все наше мастерство и усилия. Мы поможем
+              вам реализовать все ваши желания, полагаясь на наши умения,
+              ограниченные лишь воображением заказчика.
+            </p>
+          </div>
+        </section>
+        <section class="services">
+          <h2>Наши Услуги</h2>
+          <div class="services-container">
+            <div class="services-item">
+              <img src="./assets/img/icon-gravestone.png" alt="" />
+              <p>Создание нового памятника с нуля.</p>
+            </div>
+            <div class="services-item">
+              <img src="./assets/img/icon-synchronization.png" alt="" />
+              <p>Демонтаж старого и установка нового памятника.</p>
+            </div>
+            <div class="services-item">
+              <img src="./assets/img/icon-flower.png" alt="" />
+              <p>Благоустройство могил и захоронений.</p>
+            </div>
+            <div class="services-item">
+              <img src="./assets/img/icon-vase.png" alt="" />
+              <p>Изготовление прочих декоративных изделий.</p>
+            </div>
+          </div>
+        </section>
+        <section class="guarantees">
+          <div class="guatantess-info">
+            <h3>Мы гарантируем</h3>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="line"></div>
+          <div class="guarantees-materials">
+            <h3>Материалы</h3>
+            <div class="materials"></div>
+          </div>
+        </section>
+        <section class="gallery">
+          <h3>Фотогалерея работ</h3>
+          <div class="slider-container">
+            <button class="arrow-previous">
+              <img src="./assets/svg/prev-icon.svg" alt="" />
+            </button>
+            <div class="slider-wrapper">
+              <div class="my-slider">
+                <img src="./assets/gallery/gal39834.jpg" alt="" />
+
+                <img src="./assets/gallery/gal43884.jpg" alt="" />
+
+                <img src="./assets/gallery/gal74744.jpg" alt="" />
+
+                <img src="./assets/gallery/showcase.jpg" alt="" />
+              </div>
+            </div>
+            <button class="arrow-next">
+              <img src="./assets/svg/next-icon.svg" alt="" />
+            </button>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts-text">
+            <h3>Контакты</h3>
+            <h5>Адрес:</h5>
+            <span>г.Пинск, ул. Интернациональная 53/17</span>
+            <h5>E-Mail:</h5>
+            <a href="mailto:arger.nik@mail.ru">arger.nik@mail.ru</a>
+            <h5>Телефон:</h5>
+            <a href="tel:+375 (29) 386 93 62">+375 (29) 386 93 62</a>
+            <br />
+            <a href="tel:+375 (29) 790 66 56">+375 (29) 790 66 56</a>
+          </div>
+          <div class="map" id="map"></div>
+        </section>
       </div>
     </main>
-    <footer>
-      <div class="container">
-        <img
-          src="./assets/img/about-img.png"
-          alt="angel-img"
-          class="about-img"
-        />
-        <div class="about-text"></div>
-      </div>
-    </footer>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwT7CXM-9_dH9uWQCyIYw9xsZN-TlSUw&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
     <script src="./app.js"></script>
   </body>
 </html>
