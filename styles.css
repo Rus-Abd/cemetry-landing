@@ -132,6 +132,9 @@ button {
   padding: 0;
   border: 0;
 }
+a {
+  text-decoration: none;
+}
 /* 
 ////////////////////////////////
 ////////////////////
@@ -188,9 +191,6 @@ FONTS END
   --orange-main: #e27d57;
   --font-monts: 'Montserrat';
   --fonts-eb: 'EBGaramond';
-}
-
-body {
 }
 
 .container {
@@ -413,10 +413,53 @@ nav {
   overflow: hidden;
 }
 
-
 /* 
 
 
 */
 .contacts {
+  font-family: var(--fonts-eb);
+  display: flex;
+}
+.contacts-text {
+  margin-left: 57px;
+  margin-top: 69px;
+}
+.contacts h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 43px;
+  color: var(--orange-main);
+  margin-bottom: 23px;
+}
+.contacts h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 37px;
+
+  color: var(--orange-main);
+  margin-bottom: 11px;
+  margin-top: 18px;
+}
+.contacts span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black-main);
+}
+.contacts a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black-main);
+  margin-top: 11px;
+}
+.map {
+  width: 668px;
+  height: 494px;
+  margin-left: 126px;
 }
