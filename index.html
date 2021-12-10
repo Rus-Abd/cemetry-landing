@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>ARGER</title>
   </head>
   <body>
     <header>
@@ -64,16 +69,71 @@
         </section>
         <section class="services">
           <h2>Наши Услуги</h2>
-          <div class="services-cotainer">
-            <div class="services-item"></div>
-            <div class="services-item"></div>
-            <div class="services-item"></div>
-            <div class="services-item"></div>
+          <div class="services-container">
+            <div class="services-item">
+              <img src="./assets/img/icon-gravestone.png" alt="" />
+              <p>Создание нового памятника с нуля.</p>
+            </div>
+            <div class="services-item">
+              <img src="./assets/img/icon-synchronization.png" alt="" />
+              <p>Демонтаж старого и установка нового памятника.</p>
+            </div>
+            <div class="services-item">
+              <img src="./assets/img/icon-flower.png" alt="" />
+              <p>Благоустройство могил и захоронений.</p>
+            </div>
+            <div class="services-item">
+              <img src="./assets/img/icon-vase.png" alt="" />
+              <p>Изготовление прочих декоративных изделий.</p>
+            </div>
           </div>
+        </section>
+        <section class="guarantees">
+          <div class="guatantess-info">
+            <h3>Мы гарантируем</h3>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="line"></div>
+          <div class="guarantees-materials">
+            <h3>Материалы</h3>
+            <div class="materials"></div>
+          </div>
+        </section>
+        <section class="gallery">
+          <h3>Фотогалерея работ</h3>
+          <div class="slider-container">
+            <button class="arrow-previous">
+              <img src="./assets/svg/prev-icon.svg" alt="" />
+            </button>
+            <div class="slider-wrapper">
+              <div class="my-slider">
+                <img src="./assets/gallery/gal39834.jpg" alt="" />
+
+                <img src="./assets/gallery/gal43884.jpg" alt="" />
+
+                <img src="./assets/gallery/gal74744.jpg" alt="" />
+
+                <img src="./assets/gallery/showcase.jpg" alt="" />
+              </div>
+            </div>
+            <button class="arrow-next">
+              <img src="./assets/svg/next-icon.svg" alt="" />
+            </button>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts-text"></div>
+          <div class="map"></div>
         </section>
       </div>
     </main>
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

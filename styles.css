@@ -86,6 +86,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -100,29 +101,37 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+button {
+  padding: 0;
+  border: 0;
+}
 /* 
 ////////////////////////////////
 ////////////////////
@@ -139,29 +148,34 @@ FONTS START
 */
 @font-face {
   font-family: Montserrat;
-  src: url("./assets/fonts/Montserrat-Regular.ttf");
+  src: url('./assets/fonts/Montserrat-Regular.ttf');
   font-weight: 400;
 }
+
 @font-face {
   font-family: Montserrat;
-  src: url("./assets/fonts/Montserrat-SemiBold.ttf");
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf');
   font-weight: 600;
 }
+
 @font-face {
   font-family: EBGaramond;
-  src: url("./assets/fonts/EBGaramond-Regular.ttf");
+  src: url('./assets/fonts/EBGaramond-Regular.ttf');
   font-weight: 400;
 }
+
 @font-face {
   font-family: EBGaramond;
-  src: url("./assets/fonts/EBGaramond-SemiBold.ttf");
+  src: url('./assets/fonts/EBGaramond-SemiBold.ttf');
   font-weight: 600;
 }
+
 @font-face {
   font-family: EBGaramond;
-  src: url("./assets/fonts/EBGaramond-Medium.ttf");
+  src: url('./assets/fonts/EBGaramond-Medium.ttf');
   font-weight: 500;
 }
+
 /* 
 /////////////////////////
 ///////////////////////
@@ -172,15 +186,18 @@ FONTS END
 :root {
   --black-main: #261c35;
   --orange-main: #e27d57;
-  --font-monts: "Montserrat";
-  --fonts-eb: "EBGaramond";
+  --font-monts: 'Montserrat';
+  --fonts-eb: 'EBGaramond';
 }
+
 body {
 }
+
 .container {
   width: 1171px;
   margin: 0 auto;
 }
+
 nav {
   display: flex;
   flex-direction: row;
@@ -191,25 +208,31 @@ nav {
   font-family: var(--font-monts);
   color: var(--black-main);
 }
+
 .header-img {
   margin-right: 175px;
 }
+
 .header-nav {
   display: flex;
   flex-direction: row;
   margin-top: 29px;
 }
+
 .header-nav li {
   margin-right: 71px;
   cursor: pointer;
 }
+
 .header-phone {
   margin-left: 113px;
   margin-top: 30px;
 }
+
 .header-phone span {
   cursor: pointer;
 }
+
 .intro {
   background-image: url(./assets/img/intro-img.png);
   width: 1171px;
@@ -219,6 +242,7 @@ nav {
   font-family: var(--fonts-eb);
   font-weight: 400;
 }
+
 .intro-text {
   max-width: 612px;
   margin-left: 54px;
@@ -227,9 +251,11 @@ nav {
   line-height: 27px;
   color: #fff9f7;
 }
+
 .intro-text__highlighted {
   color: var(--orange-main);
 }
+
 /* 
 
 
@@ -240,37 +266,42 @@ nav {
   display: flex;
   flex-direction: row;
 }
+
 .about-img {
   margin-left: 55px;
 }
-.about-text{
+
+.about-text {
   margin-left: 250px;
   display: flex;
   flex-direction: column;
   font-family: var(--fonts-eb);
 }
-.about-text h3{
+
+.about-text h3 {
   color: var(--orange-main);
-  
+
   font-weight: 600;
   font-size: 33px;
   line-height: 43px;
   margin-bottom: 19px;
 }
-.about-text p{
+
+.about-text p {
   font-size: 17px;
   line-height: 22px;
   font-weight: normal;
   color: #000000;
   margin-bottom: 16px;
 }
+
 /* 
 
 
 
 
 */
-.services{
+.services {
   height: 480px;
   margin-top: 77px;
   background-color: var(--orange-main);
@@ -278,14 +309,114 @@ nav {
   display: flex;
   flex-direction: column;
 }
-.services h2{
+
+.services h2 {
   margin-top: 74px;
   margin-left: 493px;
   font-weight: 600;
-font-size: 33px;
-line-height: 43px;
-/* identical to box height */
+  font-size: 33px;
+  line-height: 43px;
+  /* identical to box height */
+
+  color: #fff9f7;
+}
+
+.services-container {
+  display: flex;
+  margin-left: 158px;
+  margin-top: 64px;
+}
+
+.services-item {
+  width: 170px;
+  height: 189px;
+  background: #fff9f7;
+  box-shadow: 4px 4px 5px 3px rgba(38, 28, 53, 0.15);
+  border-radius: 8px;
+  margin-right: 58px;
+}
+
+.services-item img {
+  margin-top: 30px;
+  margin-left: 65px;
+}
+
+/* 
 
 
-color: #FFF9F7
+
+*/
+.guarantees {
+  display: flex;
+}
+
+.line {
+  height: 380px;
+  width: 0px;
+  border: 2px solid #e27d57;
+}
+
+/* 
+
+
+
+*/
+.gallery {
+  height: 596px;
+  background-color: var(--orange-main);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery h3 {
+  font-family: var(--fonts-eb);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 33px;
+  line-height: 43px;
+
+  color: #fff9f7;
+
+  margin: 73px 0 82px 58.05px;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.arrow-previous {
+  background-color: transparent;
+
+  width: 29.95px;
+  height: 48.5px;
+
+  margin: 128.25px 35.8px 0 67.25px;
+}
+.arrow-previous img {
+  cursor: pointer;
+}
+.arrow-next {
+  background-color: transparent;
+
+  width: 29.95px;
+  height: 48.5px;
+
+  margin: 128.25px 68.25px 0 34.8px;
+}
+.arrow-next img {
+  cursor: pointer;
+}
+
+.slider-wrapper {
+  height: 320px;
+  width: 905px;
+  overflow: hidden;
+}
+
+
+/* 
+
+
+*/
+.contacts {
 }
