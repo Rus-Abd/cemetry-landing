@@ -234,16 +234,22 @@ nav {
 }
 .hamburger {
   display: none;
+  position: absolute;
+  left: 280px;
+  cursor: pointer;
 }
-.bar {
+
+/* .bar {
+  position: relative;
   display: block;
   width: 20px;
   height: 3px;
-  margin: 5px auto;
+  margin-top: 2px;
+
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #101010;
-}
+} */
 /* 
 
 
@@ -402,12 +408,12 @@ nav {
   margin-left: 25px;
 }
 .line {
+  float: right;
   height: 380px;
   width: 0px;
   border: 1.3px solid var(--orange-main);
   background-color: var(--orange-main);
-  margin-left: 84px;
-  margin-right: 57px;
+  margin-left: 669px;
 }
 
 .guarantees-materials h3 {
@@ -472,7 +478,15 @@ nav {
   width: 905px;
   overflow: hidden;
 }
-
+.gallery-link {
+  margin-left: 67.25px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  text-decoration: underline;
+  color: #fff9f7;
+}
 /* 
 
 
@@ -522,6 +536,28 @@ nav {
   width: 668px;
   height: 494px;
   margin-left: 126px;
+}
+/* 
+
+
+*/
+footer .container {
+  background-color: var(--orange-main);
+  height: 204px;
+  position: relative;
+}
+footer .container p {
+  position: absolute;
+  top: 50px;
+  left: 54px;
+  max-width: 556px;
+  font-family: var(--fonts-eb);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #fff9f7;
 }
 /* 
 
@@ -588,6 +624,7 @@ nav {
 
   .about-text {
     margin-left: 59.45px;
+    max-width: 525px;
   }
 
   .about-text h3 {
@@ -622,9 +659,12 @@ nav {
   }
 
   .services-item {
-    width: 170px;
+    width: 168px;
     height: 189px;
     margin-right: 58px;
+  }
+  .services-item:last-of-type {
+    display: none;
   }
 
   .services-item img {
@@ -634,7 +674,26 @@ nav {
   
   
   */
+  .guarantees {
+    margin-top: 38px;
+    margin-left: 16px;
+    margin-bottom: 48.3px;
+  }
+  .guarantees h3 {
+    margin-bottom: 46px;
 
+    font-size: 33px;
+    line-height: 43px;
+  }
+
+  .guarantees-info li {
+    margin-bottom: 47px;
+  }
+  .guarantees-info p {
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 63px;
+  }
   /* 
   
   
@@ -705,6 +764,9 @@ nav {
   }
 }
 @media screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+  }
   .header-phone {
     display: none;
   }
@@ -713,6 +775,8 @@ nav {
   }
   .header-img {
     margin-right: 167px;
+    width: 113px;
+    height: 125px;
   }
   .hamburger {
     display: block;
@@ -760,7 +824,7 @@ nav {
   .about-text p {
     font-size: 10px;
     line-height: 13px;
-
+    max-width: 294px;
     margin-bottom: 13px;
   }
   /* 
@@ -789,11 +853,125 @@ nav {
 
     margin-right: 38px;
   }
+  .services-item:nth-last-of-type(3) {
+    display: none;
+  }
 
   .services-item img {
     margin-top: 22.2px;
     margin-left: 50px;
     width: 25.81px;
     height: 25px;
+  }
+  /* 
+  
+  
+  */
+  .guarantees {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 48.3px;
+  }
+  .guarantees h3 {
+    margin-bottom: 34px;
+
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .guarantees-info li {
+    margin-bottom: 29px;
+  }
+  .guarantees-info li img {
+    width: 20px;
+    height: 20px;
+  }
+  .guarantees-info p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 22px;
+  }
+  /* 
+   
+  
+  */
+  .gallery {
+    height: 373px;
+  }
+
+  .gallery h3 {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin: 19px 0 26px 14px;
+  }
+
+  .arrow-previous {
+    width: 29.95px;
+    height: 48.5px;
+
+    margin: 128.25px 35.8px 0 67.25px;
+  }
+
+  .arrow-next {
+    width: 29.95px;
+    height: 48.5px;
+
+    margin: 128.25px 68.25px 0 34.8px;
+  }
+
+  .slider-wrapper {
+    height: 250px;
+    width: 905px;
+  }
+  /* 
+  
+  */
+  .contacts {
+    flex-direction: column;
+  }
+  .contacts-text {
+    margin-left: 14px;
+    margin-top: 19px;
+  }
+  .contacts h3 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 13px;
+  }
+  .contacts h5 {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 11px;
+    margin-top: 14px;
+  }
+  .contacts span {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contacts a {
+    font-size: 20px;
+    line-height: 26px;
+
+    margin-top: 11px;
+  }
+  .map {
+    width: 324px;
+    height: 292px;
+    margin-left: 0px;
+  }
+  /* 
+  
+  */
+  footer .container {
+    height: 67px;
+  }
+  footer .container p {
+    top: 16px;
+    left: 15px;
+    max-width: 258px;
+    font-size: 8px;
+    line-height: 10px;
   }
 }
