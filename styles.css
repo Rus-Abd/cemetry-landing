@@ -278,7 +278,96 @@ nav {
 .intro-text__highlighted {
   color: var(--orange-main);
 }
+.intro-form {
+  width: 365px;
+  height: 316px;
+  margin-top: 58px;
+  margin-left: 86px;
+  border: 2px solid #fff9f7;
+}
+.form__group:first-of-type {
+  margin-top: 36px;
+}
+.form__group:last-of-type {
+  margin-bottom: 30px;
+}
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-bottom: 23px;
+  width: 255px;
+  margin-left: 55px;
+  font-family: var(--font-monts);
+  font-style: normal;
+  font-weight: normal;
+}
 
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #fff9f7;
+  outline: 0;
+  font-size: 11px;
+  line-height: 13px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 11px;
+  line-height: 13px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+.form-button {
+  width: 167px;
+  height: 45px;
+  border: 2px solid var(--orange-main);
+  background: transparent;
+  margin-left: 95px;
+  border-radius: 8px;
+  font-family: var(--font-monts);
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff9f7;
+}
 /* 
 
 
@@ -408,7 +497,6 @@ nav {
   margin-left: 25px;
 }
 .line {
-  float: right;
   height: 380px;
   width: 0px;
   border: 1.3px solid var(--orange-main);
@@ -638,6 +726,57 @@ footer .container p {
     line-height: 20px;
     margin-bottom: 17px;
   }
+  .intro-form {
+    width: 274px;
+    height: 274px;
+    margin-top: 79px;
+    margin-left: 21px;
+  }
+  .form__group:first-of-type {
+    margin-top: 45px;
+  }
+  .form__group:last-of-type {
+    margin-bottom: 25px;
+  }
+  .form__group {
+    padding: 15px 0 0;
+    margin-bottom: 9px;
+    width: 220px;
+    margin-left: 27px;
+  }
+
+  .form__field {
+    width: 100%;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 7px 0;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 10px;
+    line-height: 12px;
+    top: 20px;
+  }
+
+  .form__label {
+    font-size: 1rem;
+  }
+
+  .form__field:focus {
+    padding-bottom: 6px;
+    border-width: 3px;
+  }
+  .form__field:focus ~ .form__label {
+    top: 0;
+    display: block;
+    font-size: 1rem;
+  }
+  .form-button {
+    width: 160px;
+    height: 40px;
+    margin-left: 54px;
+    font-size: 13px;
+  }
   /* 
   
   */
@@ -693,6 +832,9 @@ footer .container p {
     font-size: 18px;
     line-height: 23px;
     margin-left: 63px;
+  }
+  .line {
+    display: none;
   }
   /* 
   
@@ -775,8 +917,8 @@ footer .container p {
   }
   .header-img {
     margin-right: 167px;
-    width: 113px;
-    height: 125px;
+    /* width: 113px;
+    height: 125px; */
   }
   .hamburger {
     display: block;
@@ -789,6 +931,7 @@ footer .container p {
   .intro {
     width: 320px;
     height: 380px;
+    flex-direction: column;
   }
 
   .intro-text {
@@ -797,6 +940,57 @@ footer .container p {
     margin-top: 27.8px;
     font-size: 12px;
     line-height: 16px;
+  }
+  .intro-form {
+    width: 192px;
+    height: 183px;
+    margin-top: 40.3px;
+    margin-left: 64px;
+  }
+  .form__group:first-of-type {
+    margin-top: 10px;
+  }
+  .form__group:last-of-type {
+    margin-bottom: 25px;
+  }
+  .form__group {
+    padding: 13px 0 0;
+    margin-bottom: 4px;
+    width: 160px;
+    margin-left: 16px;
+  }
+
+  .form__field {
+    font-size: 8px;
+    line-height: 10px;
+    padding: 7px 0;
+  }
+
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 10px;
+    line-height: 12px;
+    top: 20px;
+  }
+
+  .form__label {
+    font-size: 1rem;
+  }
+
+  .form__field:focus {
+    padding-bottom: 6px;
+    border-width: 3px;
+  }
+  .form__field:focus ~ .form__label {
+    top: 0;
+    display: block;
+    font-size: 1rem;
+  }
+  .form-button {
+    width: 120px;
+    height: 30px;
+    margin-left: 36px;
+    font-size: 10px;
+    line-height: 12px;
   }
   /* 
   
