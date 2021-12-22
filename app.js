@@ -2,13 +2,17 @@ const prevArrow = document.querySelector('.arrow-previous img');
 const nextArrow = document.querySelector('.arrow-next img');
 var slider = tns({
   container: '.my-slider',
-  items: 3,
-  mouseDrag: true,
+
   swipeAngle: false,
   speed: 400,
   controls: false,
   nav: false,
-  gutter: 76,
+
+  responsive: {
+    1170: { fixedWidth: 251, gutter: 76, mouseDrag: false, items: 3 },
+    678: { fixedWidth: 220, gutter: 36, mouseDrag: true, items: 3 },
+    320: { fixedWidth: 180, gutter: 25, mouseDrag: true, items: 1 },
+  },
 });
 slider.getInfo();
 var info = slider.getInfo(),
