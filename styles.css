@@ -153,30 +153,35 @@ FONTS START
   font-family: Montserrat;
   src: url('./assets/fonts/Montserrat-Regular.ttf');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: Montserrat;
   src: url('./assets/fonts/Montserrat-SemiBold.ttf');
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: EBGaramond;
   src: url('./assets/fonts/EBGaramond-Regular.ttf');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: EBGaramond;
   src: url('./assets/fonts/EBGaramond-SemiBold.ttf');
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: EBGaramond;
   src: url('./assets/fonts/EBGaramond-Medium.ttf');
   font-weight: 500;
+  font-display: swap;
 }
 
 /* 
@@ -566,8 +571,12 @@ nav {
   width: 905px;
   overflow: hidden;
 }
+.my-slider img {
+  height: 320px;
+}
 .gallery-link {
   margin-left: 67.25px;
+  margin-top: 19px;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -856,12 +865,13 @@ footer .container p {
     height: 48.5px;
 
     margin: 128.25px 35.8px 0 67.25px;
+    display: none;
   }
 
   .arrow-next {
     width: 29.95px;
     height: 48.5px;
-
+    display: none;
     margin: 128.25px 68.25px 0 34.8px;
   }
 
@@ -905,7 +915,7 @@ footer .container p {
     margin-left: 45px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .container {
     width: 320px;
   }
@@ -1047,15 +1057,23 @@ footer .container p {
 
     margin-right: 38px;
   }
-  .services-item:nth-last-of-type(3) {
+  .services-item:nth-last-of-type(2) {
     display: none;
   }
 
   .services-item img {
     margin-top: 22.2px;
-    margin-left: 50px;
+
     width: 25.81px;
     height: 25px;
+  }
+  .gallery-link {
+    margin-left: 14px;
+    margin-top: 15px;
+    font-family: var(--fonts-eb);
+    font-size: 10px;
+    line-height: 13px;
+    text-underline-offset: 2px;
   }
   /* 
   
