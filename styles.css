@@ -1095,7 +1095,10 @@ footer .container p {
 
     margin-right: 38px;
   }
-
+  .services-item p {
+    font-size: 14px;
+    line-height: 18px;
+  }
   .services-item img {
     margin-top: 22.2px;
 
@@ -1405,6 +1408,10 @@ footer .container p {
     height: 140px;
 
     margin-right: 38px;
+  }
+  .services-item p {
+    font-size: 14px;
+    line-height: 18px;
   }
   .services-item:nth-last-of-type(2) {
     display: none;
