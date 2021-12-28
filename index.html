@@ -18,12 +18,12 @@
   <body>
     <header>
       <div class="container">
-        <nav>
-          <img src="./assets/img/logo.png" alt="logo img" class="header-img" />
+        <nav class="header-navbar">
+          <div class="header-img"></div>
           <ul class="header-nav">
-            <li>О нас</li>
-            <li>Услуги</li>
-            <li>Примеры Работ</li>
+            <li><a href="#intro"> О нас</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#gallery">Примеры Работ</a></li>
           </ul>
           <div class="header-phone">
             <a href="tel:+375(29)3869362">+375(29)3869362</a><br /><a
@@ -36,12 +36,17 @@
             <!-- <span class="bar"></span>
             <span class="bar"></span><span class="bar"></span> -->
           </div>
+          <nav class="drop-down">
+            <a href="#intro">О Нас</a>
+            <a href="#services">Услуги</a>
+            <a href="#gallery">Примеры</a>
+          </nav>
         </nav>
       </div>
     </header>
     <main>
       <div class="container">
-        <section class="intro">
+        <section class="intro" id="intro">
           <p class="intro-text">
             <span class="intro-text__highlighted"
               >Мы динамично развивающаяся компания по изготовлению
@@ -119,7 +124,7 @@
             </p>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
           <h2>Наши Услуги</h2>
           <div class="services-container">
             <div class="services-item">
@@ -173,7 +178,7 @@
             </div>
           </div> -->
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <h3>Фотогалерея работ</h3>
           <div class="slider-container">
             <button class="arrow-previous">

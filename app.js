@@ -68,7 +68,13 @@ formButton.addEventListener('click', () => {
   form.innerHTML =
     '<p class="form-clicked" >Спасибо за оставленную заявку. Мы перезвоним вам в ближайшее время!</p>';
 });
-const dropdown = document.querySelector('.hamburger');
-dropdown.addEventListener('click', () => {
-  dropdown.style.opacity = 0.4;
+const hamburger = document.querySelector('.hamburger');
+const dropMenu = document.querySelector('.drop-down');
+hamburger.addEventListener('click', () => {
+  hamburger.style.opacity = 0.4;
+  if (dropMenu.style.display === 'none' || !dropMenu.style.display) {
+    dropMenu.style.display = 'flex';
+  } else {
+    dropMenu.style.display = 'none';
+  }
 });
