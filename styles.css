@@ -217,7 +217,7 @@ nav {
 
 .header-img {
   margin-right: 175px;
-  background: url('./assets/img/logo.png');
+  background: url('./assets/img/logo.webp');
   background-size: cover;
   width: 169px;
   height: 169px;
@@ -649,7 +649,7 @@ nav {
   width: 668px;
   height: 494px;
   margin-left: 126px;
-  background: url('./assets/img/map.png') no-repeat;
+  background: url('./assets/img/map.webp') no-repeat;
   background-size: cover;
 }
 /* 
@@ -1205,7 +1205,7 @@ footer .container p {
     width: 304px;
     height: 292px;
     margin-left: 0px;
-    background-image: url('./assets/img/map-320px.png');
+    background-image: url('./assets/img/map-320px.webp');
   }
   /* 
   
@@ -1244,7 +1244,7 @@ footer .container p {
   }
   .header-img {
     margin-right: 0px;
-    background-image: url('./assets/img/logo-320px.png');
+    background-image: url('./assets/img/logo-320px.webp');
     width: 113px;
     height: 125px;
   }
@@ -1278,8 +1278,8 @@ footer .container p {
   */
   .intro {
     background: rgba(41, 47, 51, 0.7);
-    background-image: url('./assets/img/into-img-320px.png');
-    background-image: url('./assets/img/into-img-320px.png'),
+    background-image: url('./assets/img/into-img-320px.webp');
+    background-image: url('./assets/img/into-img-320px.webp'),
       rgba(41, 47, 51, 0.7);
     width: 320px;
     height: 380px;
@@ -1521,7 +1521,7 @@ footer .container p {
     width: 324px;
     height: 292px;
     margin-left: 0px;
-    background-image: url('./assets/img/map-320px.png');
+    background-image: url('./assets/img/map-320px.webp');
   }
   /* 
   
