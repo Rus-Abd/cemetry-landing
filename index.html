@@ -26,8 +26,9 @@
             <li>Примеры Работ</li>
           </ul>
           <div class="header-phone">
-            <span>+375 (29) 386 93 62</span><br /><span
-              >+375 (29) 790 66 56</span
+            <a href="tel:+375(29)3869362">+375(29)3869362</a><br /><a
+              href="tel:+375(29)7906656"
+              >+375(29)7906656</a
             >
           </div>
           <div class="hamburger">
@@ -59,7 +60,7 @@
           >
             <div class="form__group field">
               <input
-                type="input"
+                type="text"
                 class="form__field"
                 placeholder="Name"
                 name="name"
@@ -71,11 +72,11 @@
             </div>
             <div class="form__group field">
               <input
-                type="input"
+                type="tel"
                 class="form__field"
                 placeholder="Name"
-                name="name"
-                id="name"
+                name="tel"
+                id="tel"
                 autocomplete="off"
                 required
               />
@@ -83,11 +84,11 @@
             </div>
             <div class="form__group field">
               <input
-                type="input"
+                type="email"
                 class="form__field"
                 placeholder="Name"
-                name="name"
-                id="name"
+                name="email"
+                id="email"
                 autocomplete="off"
                 required
               />
@@ -227,7 +228,6 @@
           </div>
           <a
             href="./assets/catalogue.pdf"
-            type="pdf"
             target="”_blank”"
             class="gallery-link"
             >*Полная версия каталога</a
@@ -241,9 +241,9 @@
             <h5>E-Mail:</h5>
             <a href="mailto:arger.nik@mail.ru">arger.nik@mail.ru</a>
             <h5>Телефон:</h5>
-            <a href="tel:+375 (29) 386 93 62">+375 (29) 386 93 62</a>
+            <a href="tel:+375(29)3869362">+375 (29) 386 93 62</a>
             <br />
-            <a href="tel:+375 (29) 790 66 56">+375 (29) 790 66 56</a>
+            <a href="tel:+375(29)7906656">+375 (29) 790 66 56</a>
           </div>
           <div class="map" id="map"></div>
         </section>
@@ -259,10 +259,7 @@
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwT7CXM-9_dH9uWQCyIYw9xsZN-TlSUw&callback=initMap&libraries=&v=weekly"
-      async
-    ></script>
+
     <script src="./app.js"></script>
   </body>
 </html>

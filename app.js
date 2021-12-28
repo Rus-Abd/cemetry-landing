@@ -47,15 +47,28 @@ prevArrow.addEventListener('click', () => {
 // 52.126424070008916, 26.110533197336057
 //
 
-function initMap() {
-  const uluru = { lat: 52.126424070008916, lng: 26.110533197336057 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 17,
-    center: uluru,
-  });
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
+// function initMap() {
+//   const uluru = { lat: 52.126424070008916, lng: 26.110533197336057 };
+//   // The map, centered at Uluru
+//   const map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 17,
+//     center: uluru,
+//   });
+//   const marker = new google.maps.Marker({
+//     position: uluru,
+//     map: map,
+//   });
+// }
+//
+//
+//
+const formButton = document.querySelector('.form-button');
+const form = document.querySelector('.intro-form');
+formButton.addEventListener('click', () => {
+  form.innerHTML =
+    '<p class="form-clicked" >Спасибо за оставленную заявку. Мы перезвоним вам в ближайшее время!</p>';
+});
+const dropdown = document.querySelector('.hamburger');
+dropdown.addEventListener('click', () => {
+  dropdown.style.opacity = 0.4;
+});
