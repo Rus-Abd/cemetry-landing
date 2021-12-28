@@ -78,3 +78,8 @@ hamburger.addEventListener('click', () => {
     dropMenu.style.display = 'none';
   }
 });
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 500) {
+    dropMenu.style.display = 'none';
+  }
+});
