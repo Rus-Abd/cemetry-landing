@@ -988,7 +988,7 @@ footer .container p {
   .form__field {
     font-size: 8px;
     line-height: 10px;
-    padding: 7px 0;
+    padding: 5px 0;
   }
 
   .form__field:placeholder-shown ~ .form__label {
@@ -998,7 +998,7 @@ footer .container p {
   }
 
   .form__label {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 
   .form__field:focus {
@@ -1008,7 +1008,7 @@ footer .container p {
   .form__field:focus ~ .form__label {
     top: 0;
     display: block;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .form-button {
     width: 120px;
