@@ -197,7 +197,10 @@ FONTS END
   --font-monts: 'Montserrat';
   --fonts-eb: 'EBGaramond';
 }
-
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 .container {
   width: 1171px;
   margin: 0 auto;
@@ -224,6 +227,7 @@ nav {
 .header-img {
   margin-right: 175px;
   background: url('./assets/img/logo.webp');
+  margin-top: -36px;
   background-size: cover;
   width: 169px;
   height: 169px;
@@ -1253,7 +1257,8 @@ footer .container p {
   }
   .header-img {
     margin-right: 0px;
-    background-image: url('./assets/img/logo-320px.webp');
+    margin-top: -19px;
+    background-image: url('./assets/img/logo.webp');
     width: 113px;
     height: 125px;
   }
@@ -1283,11 +1288,15 @@ footer .container p {
   
   
   */
+
   .intro {
-    background: rgba(41, 47, 51, 0.7);
-    background-image: url('./assets/img/into-img-320px.webp');
-    background-image: url('./assets/img/into-img-320px.webp'),
-      rgba(41, 47, 51, 0.7);
+    background-image: linear-gradient(
+        to right,
+        rgba(41, 47, 51, 0.7),
+        rgba(41, 47, 51, 0.7)
+      ),
+      url('./assets/img/into-img-320px.webp');
+
     width: 320px;
     height: 380px;
     flex-direction: column;
