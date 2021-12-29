@@ -197,9 +197,9 @@ FONTS END
   --font-monts: 'Montserrat';
   --fonts-eb: 'EBGaramond';
 }
-html,
-body {
-  overflow: hidden;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 .container {
   width: 1171px;

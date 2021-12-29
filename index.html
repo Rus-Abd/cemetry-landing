@@ -7,10 +7,30 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-    <link rel="preload" as="font" />
+    <link rel="preload" href="./assets/fonts/EBGaramond-Medium.ttf" as="font" />
+    <link
+      rel="preload"
+      href="./assets/fonts/EBGaramond-Regular.ttf"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/EBGaramond-SemiBold.ttf"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/Montserrat-Regular.ttf"
+      as="font"
+    />
+    <link
+      rel="preload"
+      href="./assets/fonts/Montserrat-SemiBold.ttf"
+      as="font"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.min.css"
     />
     <link rel="stylesheet" href="./styles.css" />
     <title>ARGER</title>
@@ -21,7 +41,7 @@
         <nav class="header-navbar">
           <div class="header-img"></div>
           <ul class="header-nav">
-            <li><a href="#intro"> О нас</a></li>
+            <li><a href="#about"> О нас</a></li>
             <li><a href="#services">Услуги</a></li>
             <li><a href="#gallery">Примеры Работ</a></li>
           </ul>
@@ -102,7 +122,7 @@
             <button class="form-button" type="submit">Заказать звонок</button>
           </form>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <img
             src="./assets/img/about-img.webp"
             alt="angel-img"
