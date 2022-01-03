@@ -325,7 +325,8 @@ nav {
   background: transparent;
   transition: border-color 0.2s;
 }
-.form__field::placeholder {
+.form__field::placeholder,
+.form__field::-webkit-input-placeholder {
   color: transparent;
 }
 .form__field:placeholder-shown ~ .form__label {
