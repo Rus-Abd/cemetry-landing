@@ -1,3 +1,26 @@
+<?php
+if(filter_has_var(INPUT_POST,'submit')){
+  $name=$_POST['name'];
+  $tel=$_POST['tel'];
+  $email=$_POST['email'];
+  if(!empty($name) && !empty($tel) && !empty($email)){
+$toEmail='jokerk58@gmail.com';
+$subject='Contact Request from'.$name;
+$body='<h2>Contact Request</h2>
+        <h4>Name</h4><p>'.$name.'</p>
+        <h4>Telephone</h4><p>'.$tel.'</p>
+        <h4>Email</h4><p>'.$email.'</p>
+        ';
+        $headers="MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-Type:text/html;charset=UTF-8"."\r\n";
+        $headers.="From: ".$name."<" .$email. ">"."\r\n"
+      
+      }
+  else{
+
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -7,27 +30,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
-    <!-- <link rel="preload" href="./assets/fonts/EBGaramond-Medium.ttf" as="font" />
-    <link
-      rel="preload"
-      href="./assets/fonts/EBGaramond-Regular.ttf"
-      as="font"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/EBGaramond-SemiBold.ttf"
-      as="font"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Montserrat-Regular.ttf"
-      as="font"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Montserrat-SemiBold.ttf"
-      as="font"
-    /> -->
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
@@ -53,8 +56,6 @@
           </div>
           <div class="hamburger">
             <img src="./assets/svg/hamburger.svg" alt="" />
-            <!-- <span class="bar"></span>
-            <span class="bar"></span><span class="bar"></span> -->
           </div>
           <nav class="drop-down">
             <a href="#intro">О Нас</a>
@@ -81,7 +82,7 @@
             name="gform" 
             id="gform" 
             enctype="text/plain"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSf2-0hkeK4Tjwr4WxuAiMEmGyMbCfBZ455fEK57BqJUqpvurw/formResponse?"
+            action="<?php echo $_SERVER['PHP_SELF']; ?>"
             class="intro-form"
             autocomplete="off"
             method="POST"
@@ -91,7 +92,7 @@
                 type="text"
                 class="form__field"
                 placeholder="Name"
-                name="entry.252285756"
+                name="name"
                 id="name"
                 autocomplete="off"
                 required
@@ -103,7 +104,7 @@
                 type="tel"
                 class="form__field"
                 placeholder="Name"
-                name="entry.799034860"
+                name="tel"
                 id="tel"
                 autocomplete="off"
                 required
@@ -115,14 +116,14 @@
                 type="email"
                 class="form__field"
                 placeholder="Name"
-                name="entry.1167267197"
+                name="email"
                 id="email"
                 autocomplete="off"
                 required
               />
               <label for="name" class="form__label">E-Mail</label>
             </div>
-            <input class="form-button" type="submit" value="Заказать звонок">
+            <input class="form-button" type="submit" name="submit" value="Заказать звонок">
               
             </input>
           </form>
