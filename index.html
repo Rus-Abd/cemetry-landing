@@ -1,289 +1,218 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1"
-    />
-    <!-- <link rel="preload" href="./assets/fonts/EBGaramond-Medium.ttf" as="font" />
-    <link
-      rel="preload"
-      href="./assets/fonts/EBGaramond-Regular.ttf"
-      as="font"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/EBGaramond-SemiBold.ttf"
-      as="font"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Montserrat-Regular.ttf"
-      as="font"
-    />
-    <link
-      rel="preload"
-      href="./assets/fonts/Montserrat-SemiBold.ttf"
-      as="font"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>ARGER</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="header-navbar">
-          <div class="header-img"></div>
-          <ul class="header-nav">
-            <li><a href="#about"> О нас</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#gallery">Примеры Работ</a></li>
-          </ul>
-          <div class="header-phone">
-            <a href="tel:+375(29)3869362">+375(29)3869362</a><br /><a
-              href="tel:+375(29)7906656"
-              >+375(29)7906656</a
-            >
-          </div>
-          <div class="hamburger">
-            <img src="./assets/svg/hamburger.svg" alt="" />
-            <!-- <span class="bar"></span>
-            <span class="bar"></span><span class="bar"></span> -->
-          </div>
-          <nav class="drop-down">
-            <a href="#intro">О Нас</a>
-            <a href="#services">Услуги</a>
-            <a href="#gallery">Примеры</a>
-          </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <meta name="description"
+    content="Огромный выбор памятников в Пинске и Пинском районе на любой бюджет. Гарантия качества. Индивидуальный дизайн. Доставим. Установим. ">
+  <meta name="keywords" content="Пинск, памятники, могилы, Аргер">
+  <meta name="geo.position" content="52.12640763866961;26.110427484078375" />
+  <meta name="geo.region" content="BY-Пинский район" />
+  <meta name="geo.placename" content="Пинск, Беларусь">
+  <meta name="ICBM" content="52.12640763866961;26.110427484078375" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="АРГЕР ПАМЯТНИКИ" />
+  <meta property="og:description"
+    content="Памятники в Пинске по недорогой цене с установкой под ключ. Купить и заказать памятник в Пинске дешево в рассрочку можно у нас. Фото и цены на памятники здесь." />
+  <meta property="og:url" content="https://argmonuments.com/" />
+  <meta property="og:site_name" content="Памятники в Пинске" />
+  <meta property="og:image" content="https://ibb.co/BfZNMn0" />
+  <meta name="twitter:title" content="АРГЕР ПАМЯТНИКИ" />
+  <meta name="twitter:description"
+    content="Памятники в Пинске по недорогой цене с установкой под ключ. Купить и заказать памятник в Пинске дешево в рассрочку можно у нас. Фото и цены на памятники здесь." />
+
+
+  <link rel="canonical" href="https://argmonuments.com/" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" rel="preload" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  </noscript>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>АРГЕР ПАМЯТНИКИ</title>
+  <link rel="shortcut icon" href="./assets/img/logo.webp" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="header-navbar">
+        <div class="header-img"></div>
+        <ul class="header-nav">
+          <li><a href="#about" title="О нас"> О нас</a></li>
+          <li><a href="#services" title="услуги">Услуги</a></li>
+          <li><a href="#gallery" title="галерея">Примеры Работ</a></li>
+        </ul>
+        <div class="header-phone">
+          <a href="tel:+375(29)3869362">+375(29)3869362</a><br /><a href="tel:+375(29)7906656">+375(29)7906656</a>
+        </div>
+        <div class="hamburger">
+          <img src="./assets/svg/hamburger.svg" alt="иконка меню" />
+        </div>
+        <nav class="drop-down">
+          <a href="#intro" title="О нас">О Нас</a>
+          <a href="#services" title="услуги">Услуги</a>
+          <a href="#gallery" title="галерея">Примеры</a>
         </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <section class="intro" id="intro">
-          <p class="intro-text">
-            <span class="intro-text__highlighted"
-              >Мы динамично развивающаяся компания по изготовлению
-              памятников.</span
-            >
-            Наша мастерская предоставляет большой спектр услуг. Главная цель
-            нашего дела - достойно увековечить память о родственниках и близких
-            наших клиентов. Получите бесплатную консультацию о тех либо иных
-            услугах, заполнив форму сбоку.
-          </p>
-          <form 
-            name="gform" 
-            id="gform" 
-            enctype="text/plain"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSf2-0hkeK4Tjwr4WxuAiMEmGyMbCfBZ455fEK57BqJUqpvurw/formResponse?"
-            class="intro-form"
-            autocomplete="off"
-            method="POST"
-          >
-            <div class="form__group field">
-              <input
-                type="text"
-                class="form__field"
-                placeholder="Name"
-                name="entry.252285756"
-                id="name"
-                autocomplete="off"
-                required
-              />
-              <label for="name" class="form__label">Ваше имя</label>
-            </div>
-            <div class="form__group field">
-              <input
-                type="tel"
-                class="form__field"
-                placeholder="Name"
-                name="entry.799034860"
-                id="tel"
-                autocomplete="off"
-                required
-              />
-              <label for="name" class="form__label">Телефон</label>
-            </div>
-            <div class="form__group field">
-              <input
-                type="email"
-                class="form__field"
-                placeholder="Name"
-                name="entry.1167267197"
-                id="email"
-                autocomplete="off"
-                required
-              />
-              <label for="name" class="form__label">E-Mail</label>
-            </div>
-            <input class="form-button" type="submit" value="Заказать звонок">
-              
-            </input>
-          </form>
-        </section>
-        <section class="about" id="about">
-          <img
-            src="./assets/img/about-img.webp"
-            alt="angel-img"
-            class="about-img"
-          />
-          <div class="about-text">
-            <h3>Мы создаем памятники, которые передают ваши чувства</h3>
-            <p>
-              Мы делаем памятники которые помогут вам выразить все любовь, тепло
-              и уважение к усопшему. Каждый достоин того чтобы о нем помнили и
-              чтобы эту память сохранили не только в сердцах, но и в
-              материальном мире.
-            </p>
-            <p>
-              Памятники это особые сооружения, в которые вы вкладывает всю вашу
-              любовь и скорбь, а мы - все наше мастерство и усилия. Мы поможем
-              вам реализовать все ваши желания, полагаясь на наши умения,
-              ограниченные лишь воображением заказчика.
-            </p>
-          </div>
-        </section>
-        <section class="services" id="services">
-          <h2>Наши Услуги</h2>
-          <div class="services-container">
-            <div class="services-item">
-              <img src="./assets/img/icon-gravestone.webp" alt="" />
-              <p>Создание нового памятника с нуля.</p>
-            </div>
-            <div class="services-item">
-              <img src="./assets/img/icon-synchronization.webp" alt="" />
-              <p>Демонтаж старого и установка нового памятника.</p>
-            </div>
-            <div class="services-item">
-              <img src="./assets/img/icon-flower.webp" alt="" />
-              <p>Благоустройство могил и захоронений.</p>
-            </div>
-            <div class="services-item">
-              <img src="./assets/img/icon-vase.webp" alt="" />
-              <p>Изготовление прочих декоративных изделий.</p>
-            </div>
-          </div>
-        </section>
-        <section class="guarantees">
-          <div class="guarantees-info">
-            <h3>Мы гарантируем</h3>
-            <ul>
-              <li>
-                <img src="./assets/svg/thumbsUp.svg" alt="" />
-                <p>Качество материалов и продукции.</p>
-              </li>
-              <li>
-                <img src="./assets/svg/time.svg" alt="" />
-                <p>Быстрота выполнения.</p>
-              </li>
-              <li>
-                <img src="./assets/svg/docExchange.svg" alt="" />
-                <p>Индивидуальный подход к каждому клиенту.</p>
-              </li>
-              <li>
-                <img src="./assets/svg/relation.svg" alt="" />
-                <p>Теплое отношение.</p>
-              </li>
-            </ul>
-          </div>
-          <div class="line"></div>
-        </section>
-        <section class="gallery" id="gallery">
-          <h3>Фотогалерея работ</h3>
-          <div class="slider-container">
-            <button class="arrow-previous">
-              <img src="./assets/svg/prev-icon.svg" alt="" />
-            </button>
-            <div class="slider-wrapper">
-              <div class="my-slider">
-                <img
-                  src="./assets/gallery/photo_2021-12-21_23-08-24.webp"
-                  alt=""
-                />
-
-                <img
-                  src="./assets/gallery/photo_2021-12-21_23-09-33.webp"
-                  alt=""
-                />
-
-                <img
-                  src="./assets/gallery/photo_2021-12-21_23-09-39.webp"
-                  alt=""
-                />
-
-                <img
-                  src="./assets/gallery/photo_2021-12-21_23-09-41.webp"
-                  alt=""
-                />
-                <img
-                  src="./assets/gallery/photo_2021-12-21_23-09-44.webp"
-                  alt=""
-                /><img
-                  src="./assets/gallery/photo_2021-12-21_23-09-46.webp"
-                  alt=""
-                /><img
-                  src="./assets/gallery/photo_2021-12-21_23-09-48.webp"
-                  alt=""
-                /><img
-                  src="./assets/gallery/photo_2021-12-21_23-09-49.webp"
-                  alt=""
-                />
-                <img
-                  src="./assets/gallery/photo_2021-12-21_23-09-51.webp"
-                  alt=""
-                /><img
-                  src="./assets/gallery/photo_2021-12-21_23-09-52.webp"
-                  alt=""
-                />
-              </div>
-            </div>
-            <button class="arrow-next">
-              <img src="./assets/svg/next-icon.svg" alt="" />
-            </button>
-          </div>
-          <a
-            href="./assets/catalogue.pdf"
-            target="”_blank”"
-            class="gallery-link"
-            >*Полная версия каталога</a
-          >
-        </section>
-        <section class="contacts">
-          <div class="contacts-text">
-            <h3>Контакты</h3>
-            <h5>Адрес:</h5>
-            <span>г.Пинск, ул. Интернациональная 53/17</span>
-            <h5>E-Mail:</h5>
-            <a href="mailto:arger.nik@mail.ru">arger.nik@mail.ru</a>
-            <h5>Телефон:</h5>
-            <a href="tel:+375(29)3869362">+375 (29) 386 93 62</a>
-            <br />
-            <a href="tel:+375(29)7906656">+375 (29) 790 66 56</a>
-          </div>
-          <div class="map" id="map"></div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="container">
-        <p>
-          Индивидуальный предприниматель Аргер Николай Николаевич свидетельство
-          о государственной регистрации 0442819 <br> выдано Пинским Городским
-          исполнительным комитетом 24.02.2014 УНП 291245874
+      </nav>
+    </div>
+  </header>
+  <main>
+    <h1 style="display: none;">Памятники в пинске на заказ от компании АРГЕР.</h1>
+    <div class="container">
+      <section class="intro" id="intro">
+        <p class="intro-text">
+          <span class="intro-text__highlighted">Мы динамично развивающаяся компания по изготовлению
+            памятников.</span>
+          Наша мастерская предоставляет большой спектр услуг. Главная цель
+          нашего дела - достойно увековечить память о родственниках и близких
+          наших клиентов. Получите бесплатную консультацию о тех либо иных
+          услугах, заполнив форму сбоку.
         </p>
-      </div>
-    </footer>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"
-    ></script>
+        <form action="https://formsubmit.co/jokerk58@gmail.com.com" class="intro-form" autocomplete="off" method="POST">
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="Name" name="name" id="name" autocomplete="off"
+              required />
+            <label for="name" class="form__label">Ваше имя</label>
+          </div>
+          <div class="form__group field">
+            <input type="tel" class="form__field" placeholder="Name" name="tel" id="tel" autocomplete="off" required />
+            <label for="name" class="form__label">Телефон</label>
+          </div>
+          <div class="form__group field">
+            <input type="email" class="form__field" placeholder="Name" name="email" id="email" autocomplete="off"
+              required />
+            <label for="name" class="form__label">E-Mail</label>
+          </div>
 
-    <script src="./app.js"></script>
-  </body>
+
+          <button class="form-button" type="submit">Заказать звонок</button>
+        </form>
+      </section>
+      <section class="about" id="about">
+        <img src="./assets/img/about-img.webp" alt="angel-img" class="about-img" />
+        <div class="about-text">
+          <h3>Мы создаем памятники, которые передают ваши чувства</h3>
+          <p>
+            Мы делаем памятники которые помогут вам выразить все любовь, тепло
+            и уважение к усопшему. Каждый достоин того чтобы о нем помнили и
+            чтобы эту память сохранили не только в сердцах, но и в
+            материальном мире.
+          </p>
+          <p>
+            Памятники это особые сооружения, в которые вы вкладывает всю вашу
+            любовь и скорбь, а мы - все наше мастерство и усилия. Мы поможем
+            вам реализовать все ваши желания, полагаясь на наши умения,
+            ограниченные лишь воображением заказчика.
+          </p>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2>Наши Услуги</h2>
+        <div class="services-container">
+          <div class="services-item">
+            <img src="./assets/img/icon-gravestone.webp" alt="иконка памятника" />
+            <p>Создание нового памятника с нуля.</p>
+          </div>
+          <div class="services-item">
+            <img src="./assets/img/icon-synchronization.webp" alt="иконка синхонизации" />
+            <p>Демонтаж старого и установка нового памятника.</p>
+          </div>
+          <div class="services-item">
+            <img src="./assets/img/icon-flower.webp" alt="иконка цветка" />
+            <p>Благоустройство могил и захоронений.</p>
+          </div>
+          <div class="services-item">
+            <img src="./assets/img/icon-vase.webp" alt="иконка вазы" />
+            <p>Изготовление прочих декоративных изделий.</p>
+          </div>
+        </div>
+      </section>
+      <section class="guarantees">
+        <div class="guarantees-info">
+          <h3>Мы гарантируем</h3>
+          <ul>
+            <li>
+              <img src="./assets/svg/thumbsUp.svg" alt="иконка палец вверх" />
+              <p>Качество материалов и продукции.</p>
+            </li>
+            <li>
+              <img src="./assets/svg/time.svg" alt="иконка время" />
+              <p>Быстрота выполнения.</p>
+            </li>
+            <li>
+              <img src="./assets/svg/docExchange.svg" alt="иконка документов" />
+              <p>Индивидуальный подход к каждому клиенту.</p>
+            </li>
+            <li>
+              <img src="./assets/svg/relation.svg" alt="иконка сотрудничества" />
+              <p>Теплое отношение.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="line"></div>
+      </section>
+      <section class="gallery" id="gallery">
+        <h3>Фотогалерея работ</h3>
+        <div class="slider-container">
+          <button class="arrow-previous">
+            <img src="./assets/svg/prev-icon.svg" alt="иконка предыдущее" />
+          </button>
+          <div class="slider-wrapper">
+            <div class="my-slider">
+              <img src="./assets/gallery/photo_2021-12-21_23-08-24.webp" alt="памятник" />
+
+              <img src="./assets/gallery/photo_2021-12-21_23-09-33.webp" alt="памятник" />
+
+              <img src="./assets/gallery/photo_2021-12-21_23-09-39.webp" alt="памятник" />
+
+              <img src="./assets/gallery/photo_2021-12-21_23-09-41.webp" alt="памятник" />
+              <img src="./assets/gallery/photo_2021-12-21_23-09-44.webp" alt="памятник" /><img
+                src="./assets/gallery/photo_2021-12-21_23-09-46.webp" alt="памятник" /><img
+                src="./assets/gallery/photo_2021-12-21_23-09-48.webp" alt="памятник" /><img
+                src="./assets/gallery/photo_2021-12-21_23-09-49.webp" alt="памятник" />
+              <img src="./assets/gallery/photo_2021-12-21_23-09-51.webp" alt="памятник" /><img
+                src="./assets/gallery/photo_2021-12-21_23-09-52.webp" alt="памятник" />
+            </div>
+          </div>
+          <button class="arrow-next">
+            <img src="./assets/svg/next-icon.svg" alt="иконка следущее" />
+          </button>
+        </div>
+        <a href="./assets/catalogue.pdf" target="”_blank”" title="каталог" class="gallery-link">*Полная версия
+          каталога</a>
+      </section>
+      <section class="contacts">
+        <div class="contacts-text">
+          <h3>Контакты</h3>
+          <h5>Адрес:</h5>
+          <address>г.Пинск, ул. Интернациональная 53/17</address>
+          <h5>E-Mail:</h5>
+          <a href="mailto:arger.nik@mail.ru" title="Почта">arger.nik@mail.ru</a>
+          <h5>Телефон:</h5>
+          <a href="tel:+375(29)3869362" title="номер телефона">+375 (29) 386 93 62</a>
+          <br />
+          <a href="tel:+375(29)7906656" title="номер телефона">+375 (29) 790 66 56</a>
+        </div>
+        <div class="map" id="map"></div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>
+        Индивидуальный предприниматель Аргер Николай Николаевич свидетельство
+        о государственной регистрации 0442819 <br> выдано Пинским Городским
+        исполнительным комитетом 24.02.2014 УНП 291245874
+      </p>
+    </div>
+  </footer>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+  <script src="./app.js"></script>
+</body>
+
 </html>
