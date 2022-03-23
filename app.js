@@ -1,7 +1,7 @@
 const prevArrow = document.querySelector('.arrow-previous img');
 const nextArrow = document.querySelector('.arrow-next img');
 window.onload = () => {
-  var slider = tns({
+  let slider = tns({
     container: '.my-slider',
     lazyload: true,
     swipeAngle: false,
@@ -16,9 +16,7 @@ window.onload = () => {
     },
   });
   slider.getInfo();
-  var info = slider.getInfo(),
-    indexPrev = info.indexCached,
-    indexCurrent = info.index;
+
   let prevSlide = 0;
   let currentSlide = 0;
   nextArrow.addEventListener('click', () => {
@@ -42,6 +40,32 @@ window.onload = () => {
       currentSlide -= 1;
       slider.goTo(currentSlide);
     }
+  });
+
+  let serviceSlider = tns({
+    container: '.services-container',
+    swipeAngle: false,
+    speed: 400,
+    controls: false,
+    autoWidth: false,
+
+    nav: false,
+
+    responsive: {
+      1190: {
+        mouseDrag: false,
+
+        items: 4,
+
+        disable: true,
+        edgePadding: 158,
+      },
+
+      500: { fixedWidth: 170 },
+      330: { gutter: 58, items: 3 },
+      250: { items: 2 },
+      1: { mouseDrag: true, fixedWidth: 130, gutter: 38, items: 1 },
+    },
   });
 };
 
@@ -67,3 +91,40 @@ window.addEventListener('resize', () => {
     dropMenu.style.display = 'none';
   }
 });
+form.onSubmit = function (evt) {
+  evt.preventDefault();
+  const formattedFormData = new FormData(form);
+  postData(formattedFormData);
+};
+function myFunc(e) {
+  e.preventDefault();
+}
+
+async function postData(formattedFormData) {
+  const response = await fetch('handle_form.php', {
+    method: 'POST',
+    body: formattedFormData,
+  });
+
+  const data = await response.text();
+
+  console.log(data);
+}
+//
+//
+//
+//
+//
+const imgContainer = document.querySelector('.my-slider');
+imgContainer.onclick = function (e) {
+  let target = e.target;
+  if (target.tagName != 'img') console.log('no');
+  console.log(target.src);
+  show(target.src);
+};
+function show(src) {
+  document.body.innerHTML += `<div class="show">
+  <div class-"close"></div>
+  <img src="${src}" alt="памятник" />
+  </div>`;
+}
